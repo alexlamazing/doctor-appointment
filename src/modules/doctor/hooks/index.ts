@@ -3,8 +3,10 @@ import {
   getBookingList,
   getDoctorDetail,
   getDoctorList,
+  patchBooking,
+  postBooking,
 } from '@services/api';
-import { useQuery } from '@tanstack/react-query';
+import { useMutation, useQuery } from '@tanstack/react-query';
 
 export const useGetDoctorList = () => {
   return useQuery({ queryKey: ['doctor-list'], queryFn: getDoctorList });
@@ -13,7 +15,7 @@ export const useGetDoctorList = () => {
 export const useGetDoctorDetail = (id: string) => {
   return useQuery({
     queryKey: ['doctor-detail', id],
-    queryFn: () => getDoctorDetail(id),
+    queryFn: id ? () => getDoctorDetail(id) : undefined,
   });
 };
 
@@ -26,4 +28,12 @@ export const useGetBookingDetail = (id: string) => {
     queryKey: ['booking-detail', id],
     queryFn: () => getBookingDetail(id),
   });
+};
+
+export const usePostBooking = () => {
+  return useMutation({ mutationFn: postBooking });
+};
+
+export const usePatchBooking = () => {
+  return useMutation({ mutationFn: patchBooking });
 };

@@ -35,18 +35,18 @@ const createRequest = <T>(
   return axios(requestOptions);
 };
 
-export const getDoctorList = () => createRequest<void>('doctor', 'get');
+export const getDoctorList = () => createRequest<void>('/doctor', 'get');
 
 export const getDoctorDetail = (id: string) =>
-  createRequest<void>(`doctor/${id}`, 'get');
+  createRequest<void>(`/doctor/${id}`, 'get');
 
-export const getBookingList = () => createRequest<void>('booking', 'get');
+export const getBookingList = () => createRequest<void>('/booking', 'get');
 
 export const getBookingDetail = (id: string) =>
-  createRequest<void>(`booking/${id}`, 'get');
+  createRequest<void>(`/booking/${id}`, 'get');
 
 export const postBooking = (payload: BookingItemType) =>
-  createRequest<void>('booking', 'post', payload);
+  createRequest<void>('/booking', 'post', payload);
 
 export const patchBooking = (request: PatchBookingType) =>
-  createRequest<void>(`booking/${request.params.id}`, 'patch', request.body);
+  createRequest<void>(`/booking/${request.params.id}`, 'patch', request.body);
