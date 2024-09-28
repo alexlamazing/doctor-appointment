@@ -7,7 +7,7 @@ import { getDoctorDetail } from '@services/api';
 import { QueryClient } from '@tanstack/react-query';
 import { GetServerSideProps } from 'next';
 
-export default function Page(props: { doctorId: string }) {
+export default function DoctorPage(props: { doctorId: string }) {
   const { data, isLoading } = useGetDoctorDetail(props.doctorId);
 
   const docterData = data?.data ?? ({} as DoctorType);

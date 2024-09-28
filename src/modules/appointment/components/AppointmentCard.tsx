@@ -72,7 +72,7 @@ const AppointmentCard = ({
         <div className='flex gap-x-3 items-center pb-3 border-b border-neutral-100'>
           <div className='p-1 bg-purple-50 rounded-full'>
             <Image
-              src='/images/calendar.png'
+              src='/static/images/calendar.png'
               width={40}
               height={40}
               alt='doctor'
