@@ -7,7 +7,7 @@ export default function AppointmentPage() {
     <>
       <PageWrapper>
         <PageHeader title='Appointment' isBackButton />
-        <div className='px-4 py-4'>
+        <div>
           <AppointmentList />
         </div>
       </PageWrapper>

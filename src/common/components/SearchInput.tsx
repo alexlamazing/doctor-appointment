@@ -12,7 +12,7 @@ const SearchInput = ({ placeholder, onChange }: SearchInputProps) => {
   };
 
   return (
-    <div className='flex items-center rounded-full bg-white'>
+    <div className='flex items-center rounded-full bg-white mt-2'>
       <span className='ml-3 text-purple-900 bg-purple-50 p-2 rounded-full'>
         <SearchIcon size={24} />
       </span>

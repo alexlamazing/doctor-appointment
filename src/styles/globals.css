@@ -8,7 +8,11 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-*, *::after, *::before {
+* {
+  box-sizing: border-box;
+}
+
+*::after, *::before {
   box-sizing: inherit;
 }
 
