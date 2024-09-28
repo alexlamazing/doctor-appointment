@@ -1,3 +1,4 @@
+import PageHeader from '@common/components/PageHeader';
 import PageWrapper from '@common/components/PageWrapper';
 import { DoctorType } from '@common/types/Doctor';
 import DoctorProfile from '@modules/doctor/components/DoctorProfile';
@@ -14,6 +15,7 @@ export default function Page(props: { doctorId: string }) {
   return (
     <>
       <PageWrapper>
+        <PageHeader title='Doctor Profile' isBackButton />
         <div className='px-4 py-4'>
           {!isLoading ? (
             <>{docterData?.id ? <DoctorProfile {...docterData} /> : null}</>
