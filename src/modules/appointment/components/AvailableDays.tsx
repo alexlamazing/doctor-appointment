@@ -45,7 +45,7 @@ const AvailableDays = ({ opening_hours }: AvailableDaysProps) => {
               <td className='py-2 px-4'>
                 {schedule.isClosed
                   ? 'Closed'
-                  : `${schedule.start} - ${schedule.end}`}
+                  : `${schedule.start?.replace('.', ':')} - ${schedule.end?.replace('.', ':')}`}
               </td>
             </tr>
           ))}

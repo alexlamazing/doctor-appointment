@@ -28,7 +28,7 @@ const AvailableTimeSlot = ({
                     : 'bg-purple-100 text-purple-800'
                 )}
               >
-                {time}
+                {time.replace('.', ':')}
               </button>
             ))}
           </div>

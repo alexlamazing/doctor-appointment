@@ -16,7 +16,7 @@ export default function DoctorPage(props: { doctorId: string }) {
     <>
       <PageWrapper>
         <PageHeader title='Doctor Profile' isBackButton />
-        <div className='px-4 py-4'>
+        <div>
           {!isLoading ? (
             <>{docterData?.id ? <DoctorProfile {...docterData} /> : null}</>
           ) : (

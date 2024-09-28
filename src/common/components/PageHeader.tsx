@@ -12,7 +12,7 @@ const PageHeader = ({ title, isBackButton = false }: PageHeaderProps) => {
   const router = useRouter();
 
   return (
-    <div className='flex gap-5 items-center pt-8 px-8 pb-16'>
+    <div className='flex gap-5 items-center pt-8 px-2 pb-12'>
       {isBackButton && (
         <div
           className='absolute bg-white rounded-full p-2 cursor-pointer'

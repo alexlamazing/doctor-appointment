@@ -134,13 +134,15 @@ const DoctorProfile = ({ id, name, address, opening_hours }: DoctorType) => {
           />
         </div>
 
-        <button
-          className='bg-indigo-700 border-2 border-indigo-700 text-white px-4 py-3 rounded-full w-full transition-all duration-300 hover:bg-white hover:text-indigo-700 disabled:bg-neutral-500 disabled:border-neutral-500 disabled:hover:text-white'
-          disabled={!selectedTimeSlot}
-          onClick={handleBookAppointment}
-        >
-          Book Appoinment
-        </button>
+        <div className='flex justify-center'>
+          <button
+            className='bg-indigo-700 border-2 border-indigo-700 text-white px-4 py-3 rounded-full w-full transition-all duration-300 hover:bg-white hover:text-indigo-700 disabled:bg-neutral-500 disabled:border-neutral-500 disabled:hover:text-white'
+            disabled={!selectedTimeSlot}
+            onClick={handleBookAppointment}
+          >
+            Book Appoinment
+          </button>
+        </div>
       </div>
     </div>
   );
