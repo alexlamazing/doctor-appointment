@@ -12,10 +12,16 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "baseUrl": "./",
+    "allowSyntheticDefaultImports": true,
     "paths": {
-      "@/*": ["./src/*"]
+      "@common/*": ["src/common/*"],
+      "@modules/*": ["src/modules/*"],
+      "@services/*": ["src/services/*"],
+      "@styles/*": ["src/styles/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": ["next-env.d.ts", "src/**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"],
+  "compileOnSave": true
 }
