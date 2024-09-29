@@ -70,7 +70,7 @@ const DoctorProfile = ({ id, name, address, opening_hours }: DoctorType) => {
     const payload = {
       doctorId,
       id: uuidv4(),
-      name: 'Ryan Aulia',
+      name: 'Demo User',
       start: Number(formattedNumber),
       date: format(selectedDate as Date, 'yyyy-MM-dd'),
       status: 'confirmed',
