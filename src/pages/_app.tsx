@@ -9,7 +9,9 @@ import { useEffect } from 'react';
 
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
-    const level = Cookies.get(FONT_SIZE_COOKIE_NAME) as FontSizeLevelEnum;
+    const level =
+      (Cookies.get(FONT_SIZE_COOKIE_NAME) as FontSizeLevelEnum) ??
+      FontSizeLevelEnum.DEFAULT;
 
     document.documentElement.style.setProperty(
       '--base-font-size',
