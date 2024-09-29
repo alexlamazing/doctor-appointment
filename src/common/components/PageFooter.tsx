@@ -1,17 +1,14 @@
 'use client';
 
-import dynamic from 'next/dynamic';
 import Link from 'next/link';
 
-const FontSizeSelectorNoSSR = dynamic(() => import('./FontSizeSelector'), {
-  ssr: false,
-});
+import FontSizeSelector from './FontSizeSelector';
 
 const PageFooter = () => {
   return (
     <footer className='pt-16 flex flex-wrap justify-between'>
       <div>
-        <FontSizeSelectorNoSSR />
+        <FontSizeSelector />
       </div>
       <div className='flex items-center justify-center'>
         <Link href={'/'}>Home</Link>
