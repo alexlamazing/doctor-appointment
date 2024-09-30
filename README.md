@@ -40,7 +40,7 @@ Doctor Appointment System is a doctor booking web app, bootstrap with [create-ne
 
   - to handle data in an immutable way
 
-- `day-fns`
+- `date-fns`
 
   - to handle date/time related stuff more easily
 
