@@ -9,6 +9,8 @@ Doctor Appointment System is a doctor booking web app, bootstrap with [create-ne
 - `node` (>= 20.17)
 - `yarn` (>= 1.22.22)
 
+Prettier is set up in the project. For VS Code users, please install the extension [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode). For other editors, please refer to the [doc](https://prettier.io/docs/en/editors) for integration.
+
 ### Getting Started
 
 ```bash
